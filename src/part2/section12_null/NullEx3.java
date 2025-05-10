@@ -11,9 +11,9 @@ public class NullEx3 {
     public static void main(String[] args) {
         String str1 = null;
 
-        // NullPointerException
-        boolean isSame = str1.equals("hello");
-        System.out.println("isSame = " + isSame);
+        // NullPointerException - 테스트할 땐 주석 해제하고 해보세요! (예외 발생)
+//        boolean isSame = str1.equals("hello");
+//        System.out.println("isSame = " + isSame);
 
     }
 }

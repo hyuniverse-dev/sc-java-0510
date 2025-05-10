@@ -31,7 +31,9 @@ package part1.section11_polymorphism;
 
 // 기본 동물 클래스
 class Animal {
-	void cry() {}	// 빈 메서드 
+	void cry() {
+		System.out.println("동물을 울음소릴 냅니다.");
+	}	// 빈 메서드
 }
 
 // 돼지 클래스
