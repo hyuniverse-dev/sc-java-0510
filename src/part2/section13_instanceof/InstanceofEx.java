@@ -16,23 +16,18 @@ public class InstanceofEx {
         // 학생인 경우는 학생 이름과 번호를 출력합니다.
         // 강사인 경우는 강사 이름과 과목을 출력합니다.
         if (person instanceof Student student) {
-
             int studentNo = student.studentNo;
             String name = student.name;
 
             System.out.println("학생 이름: " + name + " / 학생 번호: " + studentNo);
             student.study();
-
         } else if (person instanceof Teacher teacher) {
-
             // 출력문 작성: 강사 이름: 000 / 강의 과목: 000
             System.out.println("강사 이름: " + teacher.name + " / 강의 과목: " + teacher.subject);
             teacher.teach();
-        } else if (person instanceof Person person1) {
-
+        } else {
             // 출력문 작성: 이름: 000
-            System.out.println("이름: " + person1.name);
-
+            System.out.println("이름: " + person.name);
         }
     }
 
