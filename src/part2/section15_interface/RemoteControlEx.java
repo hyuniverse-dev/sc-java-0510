@@ -1,4 +1,5 @@
 package part2.section15_interface;
+
 /*
     인터페이스 사용
         - 인터페이스도 하나의 타입으로 사용한다.
@@ -11,12 +12,27 @@ public class RemoteControlEx {
         RemoteControl rc;
         rc = new Television();
         rc.turnOn();
+        rc.setVolume(12);
+        rc.setMute(true);
+        rc.setMute(false);
+        rc.turnOff();
 
         /// TV 리모콘에서 9번 라인 이후부터는 Audio 리모콘으로 사용한다.
         rc = new Audio();
         rc.turnOn();
+        rc.setVolume(-1);
+        rc.setMute(true);
+        rc.setMute(false);
+        rc.turnOff();
 
         // 변수 선언과 초기화를 동시에 해도 된다.
         RemoteControl rc2 = new Television();
+
+        // 인터페이스 상수 필드에 접근
+        System.out.println(RemoteControl.MAX_VOLUME);
+        System.out.println(RemoteControl.MIN_VOLUME);
+
+        // 인터페이스 정적 메소드 호출
+        RemoteControl.changeBattery();
     }
 }
