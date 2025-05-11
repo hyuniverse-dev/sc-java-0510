@@ -3,6 +3,7 @@ package part2.section14_enum;
 import java.util.Calendar;
 
 /*
+    노션: https://hyuniverse-space.notion.site/Enum-396e5dc07cc642cb806d6093fd3c8a8e?pvs=4
     열거 타입을 사용하여 요일 분기하기
         - Week 타입 사용
         - Calendar 객체 사용

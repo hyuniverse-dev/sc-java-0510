@@ -1,5 +1,6 @@
 package part2.section12_null;
 /*
+    노션: https://hyuniverse-space.notion.site/null-NullPointerException-7b9432a93525481bb2da4c9cb4e390b8?pvs=4
     1. 문자열 데이터 비교 방법
         - == (동등연산자) 로 비교할 땐 참조 타입의 경우 해당 객체의 참조 주소를 기준으로 비교한다.
         - 문자열 데이터의 경우 메모리를 효율적으로 사용하기 위해 동일한 패턴은 공유한다.

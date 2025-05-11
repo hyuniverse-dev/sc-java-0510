@@ -1,6 +1,7 @@
 package part2.section13_instanceof;
 
 /*
+    노션: https://hyuniverse-space.notion.site/11a2c9c18dcc80888f0fed256a2ada0a?pvs=4
     객체 타입 확인
         - 상속 관계가 생성되면 다형성을 구현할 수 있다.
         - 다형성은 부모 클래스의 타입을 공유해서 사용한다.
