@@ -21,6 +21,7 @@ package part2.section15_interface;
  */
 public interface RemoteControl {
     /*
+        노션: [상수 필드] https://hyuniverse-space.notion.site/1202c9c18dcc80a99674dbfb306ed4d8?pvs=4
         public 상수 필드: [public static final] 타입 상수명 = 값;
         인터페이스 선언된 필드는 모두 public static final 특성을 갖기 때문에 생략이 가능하다.
      */
@@ -28,6 +29,7 @@ public interface RemoteControl {
     int MIN_VOLUME = 0;
 
     /*
+        노션: [추상 메소드] https://hyuniverse-space.notion.site/1222c9c18dcc803d807bf29000e56676?pvs=4
         public 추상 메소드 선언: [public abstract] 리턴타입 메소드명(매개변수 목록);
         [public abstract] 키워드는 생략이 가능하다.
         구현체에서 반드시 실행부를 구현해야 한다. (재정의 한다.)
@@ -40,6 +42,7 @@ public interface RemoteControl {
     void setVolume(int volume);
 
     /*
+        노션: [default 메소드] https://hyuniverse-space.notion.site/1222c9c18dcc806da495dff86183f8cb?pvs=4
         default 메소드 선언:  [public] default 리턴타입 메소드명(매개변수 목록) {...}
         [public] 키워드는 생략이 가능하다.
         추상메소드는 구현체에서 실행부를 구현하지만 default 메소드는 인터페이스에서 실행부를 가진다.
@@ -56,6 +59,7 @@ public interface RemoteControl {
     ;
 
     /*
+        노션: [정적 메소드] https://hyuniverse-space.notion.site/1222c9c18dcc80eeb3dff7273f6949a0?pvs=4
         public 정적 메소드: [public | private] static 리턴타입 메소드명(매개변수 목록) {...}
         [public | private] 은 생략이 가능하다.
         구현체가 없어도 인터페이스만으로 호출이 가능하다. 따라서 상수 필드와 동일하다.
