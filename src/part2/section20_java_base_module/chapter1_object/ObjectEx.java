@@ -1,4 +1,4 @@
-package part2.section20_java_base_module;
+package part2.section20_java_base_module.chapter1_object;
 
 /*
     Object 클래스

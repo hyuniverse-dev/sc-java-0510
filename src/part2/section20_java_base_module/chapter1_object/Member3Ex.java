@@ -1,4 +1,4 @@
-package part2.section20_java_base_module;
+package part2.section20_java_base_module.chapter1_object;
 
 public class Member3Ex {
     public static void main(String[] args) {
