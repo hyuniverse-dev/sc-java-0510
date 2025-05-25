@@ -1,4 +1,4 @@
-package part2.section23_collention;
+package part2.section23_collection;
 
 import java.util.*;
 import java.util.Map.Entry;

@@ -1,4 +1,4 @@
-package part2.section23_collention;
+package part2.section23_collection;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

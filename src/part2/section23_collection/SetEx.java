@@ -1,4 +1,4 @@
-package part2.section23_collention;
+package part2.section23_collection;
 
 /*
     Set 컬렉션
