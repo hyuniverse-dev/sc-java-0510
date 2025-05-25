@@ -1,6 +1,7 @@
 package part2.section23_collention;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /*
@@ -39,5 +40,19 @@ public class HashSetEx {
         // 저장된 총 객체 수 얻기
         size = set2.size();
         System.out.println("저장된 총 객체 수: " + size);
+
+        // set 저장된 객체 가져오기
+        Iterator<String> iterator = set.iterator();
+        while (iterator.hasNext()) {
+            String item = iterator.next();
+            System.out.println("현재 요소: " + item);
+
+            if (item.equals("JDBC")) {
+                iterator.remove();
+            }
+        }
+
+        size = set.size();
+        System.out.println("저장된 객체 수 = " + size);
     }
 }
