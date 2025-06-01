@@ -23,8 +23,26 @@ public class CollectEx {
                 .toList();
 
         // 향상된 for 문으로 학생 이름 출력
+        for (Student2 male : males) {
+            System.out.println(male.getName());
+        }
 
         // forEach()로 학생 이름 출력
+        males.forEach(male -> System.out.println(male.getName()));
+
+        // 여학생이면서 점수가 90점 이상인 학생만 필터링해서 새로운 컬렉션으로 생성하기
+        List<Student2> females = students.stream()
+                .filter(item -> {
+                    if (item.getGender().equals("여") && item.getScore() >= 90) {
+                        return true;
+                    }
+                    return false;
+                })
+                .toList();
+
+        // forEach()로 학생 이름 출력
+        females.forEach(item -> System.out.println(item.getName()));
+
 
     }
 }
